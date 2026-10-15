@@ -162,72 +162,9 @@ The `output/` folder contains run logs, evaluation information, a reproducibilit
 - The question-answering feature searches the generated anomaly report; it is not a general-purpose web search system and does not independently verify external events.
 - The default anomaly thresholds are project settings, not universal industry standards.
 
-## How to Download and Run the Project Locally
+older for the generated freight anomaly report.
 
-1. Download the Project
+Note: Ensure that the required input CSV files are present in the data folder before running the project. Do not upload your virtual environment or secret credentials to GitHub.<img width="1855" height="932" alt="image" src="https://github.com/user-attachments/assets/aee4ab4b-17f9-4cdd-a151-3fe44179964c" />
+ <img width="1855" height="923" alt="image" src="https://github.com/user-attachments/assets/ecf7fc68-ce0c-41b3-befe-2c0757cb7cd1" />
 
-Open the GitHub repository.
-
-Click the green Code button.
-
-Select Download ZIP.
-
-Extract the downloaded ZIP file.
-
-Open the extracted project folder in VS Code.
-
-2. Install Python
-
-Make sure Python 3.10 or a compatible version is installed on your system.
-
-Check the installation by running the following command in the terminal:
-
-python --version
-
-3. Open the Project Folder
-
-Open the extracted project folder in VS Code. Open the terminal and navigate to the folder containing requirements.txt.
-
-4. Create a Virtual Environment
-
-Run the following commands:
-
-python -m venv .venv
-
-Activate the virtual environment.
-
-For Windows (PowerShell):
-
-.\.venv\Scripts\Activate.ps1
-
-For macOS/Linux:
-
-source .venv/bin/activate
-
-5. Install Dependencies
-
-Install the required Python libraries:
-
-pip install -r requirements.txt
-
-6. Run the Project
-
-Run the following command to execute the freight cost anomaly detection pipeline:
-
-python -m src.pipeline
-
-The pipeline processes the shipment data, analyzes freight costs, detects anomalies, and generates the output report.
-
-7. Ask Questions About the Results
-
-You can query the generated anomaly results using natural-language questions:
-
-python -m src.pipeline --ask "Why did Chennai-Bangalore get pricier in March?"
-
-The system returns matching anomaly records and supporting evidence when available.
-
-8. Check the Output
-
-After execution, check the output folder for the generated freight anomaly report.
-
-Note: Ensure that the required input CSV files are present in the data folder before running the project. Do not upload your virtual environment or secret credentials to GitHub.
+<img width="1856" height="931" alt="image" src="https://github.com/user-attachments/assets/a43e2f37-806f-41bb-a12e-95102656a5df" />

@@ -1,0 +1,15 @@
+{
+  "shipment_rows": 2940,
+  "weekly_route_rows": 728,
+  "anomaly_rows": 7,
+  "justified_rows": 2,
+  "unexplained_rows": 5,
+  "llm_calls": 0,
+  "llm_input_tokens": 0,
+  "llm_output_tokens": 0,
+  "llm_cost_usd": 0.0,
+  "retrieval": "scikit-learn TF-IDF candidate ranking + deterministic route/date/cost-impact gates",
+  "threshold": 0.2,
+  "min_previous_week_rise": 0.05,
+  "output_sha256": "259627760d50f3b9ec4e9d5e0e2660d8154aaabc4d4d7c6c97ad06d60f0196e8"
+}

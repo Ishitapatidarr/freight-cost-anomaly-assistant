@@ -1,0 +1,7 @@
+Reproducibility check: PASS
+Input files: the provided shipment_records.csv, context_notes.csv, and sample_output_format_v2.csv.
+Procedure: ran `python -m src.pipeline` three times without modifying inputs or parameters.
+Compared output/freight_anomalies.csv from runs 1, 2, and 3 byte-for-byte using `cmp`.
+Result: identical across all three runs.
+Output SHA-256: 8b48d5ee9860fabf25325fd199a0aff24cb9c66373199a28702b3e13f8283509
+LLM calls: 0 (TF-IDF and hard evidence gates are deterministic; no stochastic generation).

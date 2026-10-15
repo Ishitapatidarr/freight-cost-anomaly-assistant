@@ -1,0 +1,17 @@
+Evaluation report
+=================
+Automated tests: 3 passed.
+Coverage:
+1. Monday week grouping and weighted cost-per-tonne-km formula.
+2. Historical baseline uses shift(1), excluding the current week.
+3. Note retrieval rejects wrong routes, out-of-window notes, and notes that do not support a cost increase.
+
+Full dataset run:
+- Input shipment records: 2,940
+- Weekly route rows: 728
+- Output anomaly candidates: 7
+- Evidence-supported (justified) candidates: 2
+- Unexplained candidates: 5
+- LLM calls/input tokens/output tokens/LLM cost: 0/0/0/$0.00
+
+Important: thresholds are documented heuristics because the assignment does not specify a numeric anomaly threshold. The baselines themselves follow the prescribed definitions. Manually review the threshold and candidate output before submission.
